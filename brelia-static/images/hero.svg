@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <defs><linearGradient id="h1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f5c6d3"/><stop offset="100%" stop-color="#fce4ec"/></linearGradient></defs>
+  <rect width="600" height="500" fill="url(#h1)" rx="20"/>
+  <circle cx="480" cy="80" r="140" fill="#d4456e" opacity=".1"/>
+  <circle cx="100" cy="420" r="90" fill="#2d5016" opacity=".08"/>
+  <circle cx="300" cy="200" r="40" fill="#d4456e" opacity=".25"/>
+  <circle cx="255" cy="170" r="40" fill="#d4456e" opacity=".25"/>
+  <circle cx="345" cy="170" r="40" fill="#d4456e" opacity=".25"/>
+  <circle cx="255" cy="230" r="40" fill="#b8365a" opacity=".22"/>
+  <circle cx="345" cy="230" r="40" fill="#b8365a" opacity=".22"/>
+  <circle cx="300" cy="200" r="30" fill="#a67c52" opacity=".5"/>
+  <circle cx="490" cy="300" r="20" fill="#d4456e" opacity=".3"/>
+  <circle cx="472" cy="287" r="20" fill="#d4456e" opacity=".28"/>
+  <circle cx="508" cy="287" r="20" fill="#b8365a" opacity=".28"/>
+  <circle cx="490" cy="300" r="15" fill="#a67c52" opacity=".5"/>
+  <line x1="300" y1="240" x2="300" y2="420" stroke="#2d5016" stroke-width="3" opacity=".3"/>
+  <line x1="300" y1="320" x2="260" y2="300" stroke="#2d5016" stroke-width="2" opacity=".25"/>
+  <line x1="300" y1="360" x2="340" y2="340" stroke="#2d5016" stroke-width="2" opacity=".25"/>
+  <circle cx="120" cy="120" r="6" fill="#d4456e" opacity=".3"/>
+  <circle cx="140" cy="100" r="4" fill="#a67c52" opacity=".4"/>
+  <text x="300" y="460" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#d4456e" opacity=".55">Arranjos Especiais</text>
+  <text x="300" y="485" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2d5016" opacity=".4" letter-spacing="2">BRELIA GARDEN</text>
+</svg>

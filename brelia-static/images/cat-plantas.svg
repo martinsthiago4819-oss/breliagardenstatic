@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="60" fill="#2d5016" opacity=".18"/>
+  <circle cx="60" cy="60" r="45" fill="#2d5016" opacity=".28"/>
+  <text x="60" y="73" text-anchor="middle" font-family="serif" font-size="36" fill="#2d5016" opacity=".8" font-weight="bold">Pl</text>
+</svg>

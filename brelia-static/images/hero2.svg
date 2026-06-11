@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
+  <defs><linearGradient id="h2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e8d4be"/><stop offset="100%" stop-color="#fde8d8"/></linearGradient></defs>
+  <rect width="400" height="350" fill="url(#h2)" rx="20"/>
+  <circle cx="320" cy="50" r="100" fill="#a67c52" opacity=".12"/>
+  <circle cx="80" cy="300" r="70" fill="#d4456e" opacity=".1"/>
+  <circle cx="200" cy="155" r="32" fill="#a67c52" opacity=".3"/>
+  <circle cx="170" cy="133" r="32" fill="#a67c52" opacity=".28"/>
+  <circle cx="230" cy="133" r="32" fill="#c8913a" opacity=".28"/>
+  <circle cx="170" cy="177" r="32" fill="#c8913a" opacity=".26"/>
+  <circle cx="230" cy="177" r="32" fill="#a67c52" opacity=".26"/>
+  <circle cx="200" cy="155" r="22" fill="#d4456e" opacity=".5"/>
+  <line x1="200" y1="190" x2="200" y2="310" stroke="#2d5016" stroke-width="3" opacity=".3"/>
+  <text x="200" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#a67c52" opacity=".6">Buque Especial</text>
+</svg>

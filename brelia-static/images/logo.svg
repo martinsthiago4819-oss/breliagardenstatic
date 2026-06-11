@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70">
+  <defs><linearGradient id="lg"><stop offset="0%" stop-color="#fef5f3"/><stop offset="100%" stop-color="#fff5f8"/></linearGradient></defs>
+  <rect width="220" height="70" fill="url(#lg)" rx="8"/>
+  <circle cx="35" cy="25" r="9" fill="#d4456e" opacity=".7"/>
+  <circle cx="47" cy="19" r="9" fill="#d4456e" opacity=".65"/>
+  <circle cx="53" cy="31" r="9" fill="#b8365a" opacity=".65"/>
+  <circle cx="41" cy="37" r="9" fill="#d4456e" opacity=".65"/>
+  <circle cx="29" cy="37" r="9" fill="#b8365a" opacity=".6"/>
+  <circle cx="41" cy="28" r="7" fill="#a67c52" opacity=".9"/>
+  <text x="72" y="33" font-family="Georgia,serif" font-size="20" fill="#d4456e" font-weight="600" letter-spacing=".5">Brelia</text>
+  <text x="73" y="51" font-family="sans-serif" font-size="10" fill="#2d5016" letter-spacing="3" font-weight="500">GARDEN</text>
+</svg>
