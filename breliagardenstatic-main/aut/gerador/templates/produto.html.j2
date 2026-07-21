@@ -1,0 +1,134 @@
+<!-- Gerado automaticamente por gerar_produtos.py — NÃO EDITAR À MÃO.
+     Pra mudar o conteúdo, edite produtos.json e rode o script de novo. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ produto.nome }} — {{ config.nome_site }}</title>
+  <meta name="description" content="{{ produto.descricao[:150] }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-bar">{{ config.emoji }} Entrega em {{ config.regiao }} · {{ config.horario }}</div>
+
+<header class="site-header">
+  <div class="header-container">
+    <a href="index.html" class="site-logo"><img src="images/logo.jpeg" alt="{{ config.nome_site }}" class="logo-img"></a>
+    <nav class="site-nav">
+      <a href="index.html"    class="nav-link">Início</a>
+      <a href="produtos.html" class="nav-link ativo">Produtos</a>
+      <a href="sobre.html"    class="nav-link">Sobre</a>
+      <a href="contato.html"  class="nav-link">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/{{ config.whatsapp }}" target="_blank" rel="noopener" class="btn-whatsapp-header">💬 <span class="btn-label">WhatsApp</span></a>
+      <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html">Início</a> /
+  <a href="produtos.html">Produtos</a> /
+  <span>{{ produto.nome }}</span>
+</div>
+
+<section class="section">
+  <div class="produto-detalhe">
+
+    <div class="produto-galeria">
+  <img class="imagem-principal" src="images/{{ produto.foto_principal }}" alt="{{ produto.nome }}" style="height:420px; object-fit:cover;">
+  {% if produto.fotos_extra %}
+  <div class="produto-galeria-thumbs">
+    <img src="images/{{ produto.foto_principal }}" alt="{{ produto.nome }}" style="width:72px;height:72px;object-fit:cover;border-radius:6px;">
+    {% for foto in produto.fotos_extra %}
+    <img src="images/{{ foto }}" alt="foto" style="width:72px;height:72px;object-fit:cover;border-radius:6px;">
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+    <div class="produto-info">
+      <span class="tag-categoria">{{ produto.categoria }}</span>
+      <h1>{{ produto.nome }}</h1>
+      <div class="produto-preco">
+        R$ {{ "%.2f"|format(produto.preco)|replace(".", ",") }}
+        {% if produto.preco_original %}
+        <span class="preco-original">R$ {{ "%.2f"|format(produto.preco_original)|replace(".", ",") }}</span>
+        {% endif %}
+      </div>
+      <p class="produto-desc">{{ produto.descricao }}</p>
+      <ul class="produto-lista">
+        {% if produto.medidas %}<li>📦 Medidas: {{ produto.medidas }}</li>{% endif %}
+        {% for item in produto.bullets %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      <a href="https://wa.me/{{ config.whatsapp }}?text=Ol%C3%A1!%20Quero%20encomendar%20{{ produto.nome | urlencode }}" target="_blank" rel="noopener" class="btn-whatsapp-produto">
+        💬 Encomendar pelo WhatsApp
+      </a>
+      <p class="produto-nota">Resposta em até 10 minutos · {{ config.horario }}</p>
+    </div>
+
+  </div>
+</section>
+
+{% if relacionados %}
+<section class="section" style="padding-top:0;">
+  <div class="secao-titulo">
+    <h2>Você também pode gostar</h2>
+  </div>
+  <div class="grid-produtos">
+    {% for rel in relacionados %}
+    <a href="produto-{{ rel.slug }}.html" class="card-produto">
+      <img src="images/{{ rel.foto_principal }}" alt="{{ rel.nome }}" loading="lazy">
+      <div class="card-produto-info">
+        <span class="tag-categoria">{{ rel.categoria }}</span>
+        <h3>{{ rel.nome }}</h3>
+        <p>{{ rel.descricao[:80] }}{% if rel.descricao|length > 80 %}...{% endif %}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo">{{ config.emoji }} {{ config.nome_site }}</span>
+      <p class="footer-desc">{{ config.descricao_footer }}</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/{{ config.whatsapp }}" target="_blank">WhatsApp</a></li>
+        <li><a href="mailto:{{ config.email }}">E-mail</a></li>
+        <li><a href="{{ config.instagram_url }}" target="_blank">Instagram</a></li>
+        <li><span style="color:#666">📍 {{ config.regiao }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {{ ano }} {{ config.nome_site }} · Todos os direitos reservados</span>
+    <span>Feito com {{ config.emoji }} em {{ config.cidade }}</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

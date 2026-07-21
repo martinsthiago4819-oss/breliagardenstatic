@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "box-eterno-fk",
+    "categoria": "Box Eterno",
+    "nome": "Box Eterno",
+    "preco": 139.90,
+    "preco_original": 189.00,
+    "descricao": "Uma caixa que vai além da decoração. Esse modelo em especial é produzido com flores artificiais e foi criada para embelezar e perfumar o ambiente ao mesmo tempo. As flores trazem charme e delicadeza, e o aromatizante pode ser borrifado diretamente nas flores, espalhando uma fragrância suave e aconchegante pelo espaço.",
+    "medidas": "11 cm x 9 cm",
+    "bullets": [
+      "6 Rosas Artificiais",
+      "Aromatizante Baunilha 100ml",
+      "Embalagem premium inclusa",
+      "Cartão de mensagem personalizado",
+      "Entrega em Curitiba e região",
+      "ATENÇÃO: Essa opção de buquê é somente personalizado com nomes disponíveis em estoque: Amor, Vida, Mãe, Com carinho, Te amo.",
+      "Certifique-se que haverá alguém para receber o pedido no momento da entrega. Caso não seja possível realiza-la, o entregador retornará para a loja e será cobrada uma nova taxa de entrega. Podendo também se preferir enviar moto/carro de aplicativo para a retirada."
+    ],
+    "foto_principal": "box-eterno-superficial.jpeg",
+    "fotos_extra": ["box-eterno-superficial2.jpeg", "box-eterno-superficial3.jpeg"],
+    "relacionados": ["box-rosas"],
+    "ativo": true
+  },
+  {
+    "slug": "produto-box-rosas",
+    "categoria": "Box Coração",
+    "nome": "Box de Rosas Vermelhas",
+    "preco": 189.00,
+    "preco_original": null,
+    "descricao": "24 rosas importadas de primeira qualidade, organizadas em caixa personalizada. Ideal para aniversários, Dia dos Namorados e ocasiões especiais. Acompanha cartão de mensagem personalizado.",
+    "medidas": null,
+    "bullets": ["Rosas importadas"],
+    "foto_principal": "box-rosas1.jpg",
+    "fotos_extra": [],
+    "relacionados": ["box-redondo-natural"],
+    "ativo": true
+  }
+]
